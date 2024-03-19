@@ -1,0 +1,238 @@
+/*Cuerpo de la Pagina*/
+body{
+    font-family: "Chakra Petch", sans-serif;
+    background-image: url("./background/BackGround.gif");
+    background-color: gray;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 950px;
+}
+
+/*Header*/
+header{
+    font-size: 87px;
+    text-align: center;
+}
+#LogoAlura{
+    display: inline-block;
+    filter: drop-shadow(3px 3px 3px rgb(255, 255, 255));
+}
+#title{
+    display: inline-block;
+    vertical-align: top;
+    font-weight: bold;
+    text-decoration: underline;
+    filter: drop-shadow(3px 3px 3px rgb(255, 255, 255));
+}
+
+/*Main*/
+.mainsection{
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+/*Caja para codificar*/
+#section-Codificar{
+    width: 400px;
+    height: 300px;
+    border: 8px solid transparent;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px white;
+    color: white;
+    background-color: transparent;
+    resize: none;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: "Chakra Petch", sans-serif;
+    transition: 0.5s;
+}
+#section-Codificar:hover{
+    backdrop-filter: blur(8px);
+}
+#labelEncode{
+    color: white;
+    font-size: 40px;
+    display: block;
+    filter: drop-shadow(3px 3px 3px rgb(0, 0, 0));
+}
+
+/*caja para decodificar*/
+#section-Decodificar{
+    width: 400px;
+    height: 300px;
+    border: 8px solid transparent;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px white;
+    color: white;
+    background-color: transparent;
+    resize: none;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: "Chakra Petch", sans-serif;
+    transition: 0.5s;
+}
+#section-Decodificar:hover{
+    backdrop-filter: blur(8px);
+}
+#labeldecode2{
+    color: white;
+    font-size: 40px;
+    display: block;
+    filter: drop-shadow(3px 3px 3px rgb(0, 0, 0));
+}
+
+/*Botones*/
+#buttonsStyle{
+    text-align: start;
+    margin-top: 50px;
+}
+
+#Encode{
+    border: 8px  rgb(153, 153, 153);
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px white;
+    font-size: 25px;
+    color: white;
+    font-family: "Chakra Petch", sans-serif;
+    background:transparent;
+    margin: 10px 50px 0px 20%;
+    transition: 0.5s;
+}
+#Encode:hover{
+    background-color:rgb(153, 153, 153);
+    scale: 1.2;
+}
+
+#Encode:active{
+    background-color:rgb(77, 77, 77);
+}
+
+#Decode{
+    border: 8px  rgb(153, 153, 153);
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px white;
+    font-size: 25px;
+    color: white;
+    font-family: "Chakra Petch", sans-serif;
+    background:transparent;
+    margin: 10px 50px 0px 0px;
+    transition: 0.5s;
+}
+#Decode:hover{
+    background-color:rgb(153, 153, 153);
+    scale: 1.2;
+}
+#Decode:active{
+    background-color:rgb(77, 77, 77);
+}
+
+#copy{
+    border: 8px  rgb(153, 153, 153);
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px white;
+    font-size: 25px;
+    color: white;
+    font-family: "Chakra Petch", sans-serif;
+    background:transparent;
+    margin: 10px 0px 0px 25%;
+    transition: 0.5s;
+}
+#copy:hover{
+    background-color:rgb(153, 153, 153);
+    scale: 1.2;
+}
+#copy:active{
+    background-color:rgb(77, 77, 77);
+}
+
+/*Alerta*/
+#alerta{
+    margin: 50px 0px 50px 0px;
+    right: 800px;
+    font-size: 20px;
+    filter: drop-shadow(2px 2px 8px rgb(0, 0, 0));
+    justify-content: center;
+    display: none;
+}
+.horizontal-shake{
+    animation: horizontal-shaking 0.35s;
+}
+@keyframes horizontal-shaking {
+    0% { transform: translateX(0) }
+    25% { transform: translateX(5px) }
+    50% { transform: translateX(-5px) }
+    75% { transform: translateX(5px) }
+    100% { transform: translateX(0) }
+}
+
+/*Pie De Pagina*/
+.footpage{
+    margin-top: 50px;
+    color: white;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+.footer-logo{
+    filter: drop-shadow(0px 0px 10px rgb(255, 255, 255));
+    max-width: 50px;
+    max-height: 50px;
+}
+.footer-logo:hover{
+    transition: 0.5s;
+    scale: 1.2;
+}
+
+@media screen and (max-width: 950px){
+    #section-Decodificar,#section-Codificar{
+        width: auto;
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 500px){
+    #LogoAlura,#title{
+        width: 100%;
+        height: auto;
+        font-size: 20vw;  
+    }
+}
+@media screen and (max-width: 950px){
+    #Decode,#Encode,#copy{
+        margin: auto;
+        width: 50%;
+        font-size: 3vw;  
+    }
+}
+@media screen and (max-width: 500px){
+    #Decode,#Encode,#copy{
+        margin: auto;
+        width: 50%;
+        font-size: 10vw;  
+    }
+}
+@media screen and (max-width: 950px){
+    #buttonsStyle{
+        text-align: center;
+    }
+}
+@media screen and (max-width: 500px){
+    #buttonsStyle{
+        text-align: center;
+    }
+}
+@media screen and (max-width: 500px){
+    #alerta{
+        font-size: 15px;
+    }
+}
+@media screen and (max-width: 850px){
+    .footpage{
+        position: relative;
+    }
+}
+

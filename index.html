@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+    <head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Kaushan+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Decode</title>
+
+    </head>
+
+    <body>
+    <header>
+        <img id="LogoAlura" src="./image/logoAlura.png" alt="LogoAlura">
+        <h1 id="title">Decodex</h1>
+    </header>
+
+    <main>
+        <section class="mainsection">
+            <div>
+                <label id="labelEncode" for="section-Codificar">Text to Encode</label>
+                <textarea id="section-Codificar"placeholder="Text...."></textarea>
+            </div>
+            <div>
+                <label id="labeldecode2" for="section-Codificar">Text Decode</label>
+                <textarea id="section-Decodificar" readonly></textarea>
+            </div>
+        </section>
+
+        <section class="buttonsSection">
+            <div >
+                <p id="alerta" class="horizontal-shake" >
+                   ¡Special characters are not allowed.!
+                </p>
+            </div>
+            <div id="buttonsStyle">
+               <button id="Encode" onclick="codificar(),alertaDeError()">Encode</button>
+               <button id="Decode" onclick="decodificar(),alertaDeError()">Decode</button>
+               <button id="copy" onclick="copiarTexto()">copy</button>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footpage">
+        <div>
+            <p>&copy Decodex</p>
+            <p>Made by Johan Venegas Vindas</p>
+            <p>2024</p>
+        </div>
+
+        <div>
+            <a href="https://www.linkedin.com/in/johan-venegas-vindas/"> <img class="footer-logo" src="./image/logolinkedin.png" alt="LogoLinkedin">  </a>
+            <a href="https://github.com/johanvenegas"> <img class="footer-logo" src="./image/logogit.png" alt="LogoGit"></a>
+        </div>
+
+    </footer>
+    <script src="script.js"></script>
+    </body>
+
+</html>
